@@ -21,7 +21,7 @@ AK_VER="$BASE_AK_VER$VER"
 
 # Vars
 export LOCALVERSION=~`echo $AK_VER`
-export CROSS_COMPILE=${HOME}/android/AK-sm-arm-eabi-4.9/bin/arm-eabi-
+export CROSS_COMPILE=/android/AK-sm-arm-eabi-4.9/bin/arm-eabi-
 export ARCH=arm
 export SUBARCH=arm
 export KBUILD_BUILD_USER=ak
@@ -29,11 +29,11 @@ export KBUILD_BUILD_HOST=kernel
 
 # Paths
 KERNEL_DIR=`pwd`
-REPACK_DIR="${HOME}/android/AK-OnePone-AnyKernel2"
-PATCH_DIR="${HOME}/android/AK-OnePone-AnyKernel2/patch"
-MODULES_DIR="${HOME}/android/AK-OnePone-AnyKernel2/modules"
-ZIP_MOVE="${HOME}/android/AK-releases"
-ZIMAGE_DIR="${HOME}/android/AK-OnePone/arch/arm/boot"
+REPACK_DIR="/android/AK-OnePone-AnyKernel2"
+PATCH_DIR="/android/AK-OnePone-AnyKernel2/patch"
+MODULES_DIR="/android/AK-OnePone-AnyKernel2/modules"
+ZIP_MOVE="/android/AK-releases"
+ZIMAGE_DIR="/android/AK-OnePone/arch/arm/boot"
 
 # Functions
 function clean_all {
